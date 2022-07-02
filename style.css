@@ -18,3 +18,24 @@ header{
     text-align: center;
 
 }
+
+.buttonCad{
+    height: 35px;
+    width: 35px;
+    background-color: aqua;
+    border: none;
+    box-shadow: 4px #787878;
+    background-image: url();
+}
+
+.cad-painel{
+    position: absolute;
+    top:0px;
+    left: 0px;
+    border: 1px solid #000;
+    background-color: #787878;
+    padding: 20px;
+    border-radius: 5px;
+    display: none;
+
+}

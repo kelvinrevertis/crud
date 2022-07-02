@@ -1,26 +1,39 @@
-<!DOCTYPE html>
+<!-- CSS only -->
 <html lang="pt">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Crud</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
+
 <body>
     <header>
         <h1>Cadastro de Clientes</h1>
     </header>
     <div>
-        <button type="button" class="btn btn-info">+</button>
+        <button type="button" onclick="openForm()" class="buttonCad">+</button>
         <table>
-            <th>Nome</th>
-            <th>E-mail</th>
-            <th>Data de Nascimento</th>
-            <th>Telefone</th>
-            
+            <tr>
+                <th>Nome</th>
+                <th>E-mail</th>
+                <th>Data de Nascimento</th>
+                <th>Telefone</th>
+            </tr>
+
         </table>
+        <form action="" id="cad-form" class="cad-painel">
+            <input type="text" name="nome" id="" placeholder="Nome completo">
+            <input type="text" name="email" id="" placeholder="E-mail">
+            <input type="date" name="date" id="">
+            <input type="Telefone" name="nome" id="" placeholder="(00) 00000-0000">
+            <button onclick="">Salvar</button>
+        </form>
 
     </div>
 </body>
+
 </html>
