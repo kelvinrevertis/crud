@@ -29,13 +29,18 @@ header{
 }
 
 .cad-painel{
-    position: absolute;
-    top:0px;
-    left: 0px;
-    border: 1px solid #000;
-    background-color: #787878;
-    padding: 20px;
-    border-radius: 5px;
+    line-height: 50px;
+    align-items: center;
+    width: auto;
+    height: 100px;
+    flex-direction: column;
     display: none;
+    margin: 100px 38%;
+    padding: 50px 60px;
+    background-color: white;
+    box-shadow: 1px 1px 10px black;
+
 
 }
+
+
