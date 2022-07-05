@@ -28,3 +28,9 @@ let editClient = (index,client)=>{
     setLocalStorage(edit)
     
 }
+
+let delClient = (index) =>{
+    const data = getLocalStorage()
+    data.splice(index,1)
+    setLocalStorage(data)
+}

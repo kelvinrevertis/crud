@@ -29,7 +29,7 @@ header{
 }
 
 .cad-painel{
-    line-height: 50px;
+    line-height: 25px;
     align-items: center;
     width: auto;
     height: 100px;
@@ -43,4 +43,6 @@ header{
 
 }
 
-
+button{
+    cursor: pointer;
+}
