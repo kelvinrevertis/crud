@@ -7,7 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Crud</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
 </head>
 
 <body>
@@ -16,27 +15,30 @@
     </header>
     <div>
         <button type="button" onclick="openForm()" class="buttonCad">+</button>
-        <table>
-            <tr>
-                <th>Nome</th>
-                <th>E-mail</th>
-                <th>Data de Nascimento</th>
-                <th>Telefone</th>
-                <th type="button">Edit</th>
-                <th type="button">Delete</th>
-            </tr>
+        <table border="solid">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>E-mail</th>
+                    <th>Telefone</th>
+                </tr>
+            </thead>
+            <tbody id="client-list">
+
+            </tbody>
 
         </table>
+
         <form action="" id="cad-form" class="cad-painel">
             <div>
-            <input type="text" name="nome" id="" placeholder="Nome completo">
-            <input type="text" name="email" id="" placeholder="E-mail">
-            <input type="date" name="date" id="">
-            <input type="Telefone" name="tel" id="" placeholder="(00) 00000-0000">
-            <button onclick="">Salvar</button>
+            <input type="text" id="name" data-index="new" placeholder="Nome completo" required>
+            <input type="text" id="email" placeholder="E-mail" required>
+            <input type="text" id="tel" placeholder="(00) 00000-0000" required>
+            <button id="save" onclick="addClient()">Salvar</button>
             <button onclick="">Cancelar</button>
             </form>
     </div>
+    <script src="script.js"></script>
 </body>
 
 </html>
