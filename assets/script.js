@@ -4,6 +4,11 @@ let openForm = () => {
     form.style.display = "block"
 }
 
+let closeForm = () =>{
+    let form = document.getElementById('cad-form')
+    form.style.display = "none"
+}
+
 let getLocalStorage = () => JSON.parse(localStorage.getItem('data')) ?? []
 let setLocalStorage = (data) => localStorage.setItem("data", JSON.stringify(data))
 
@@ -58,9 +63,11 @@ let addClient = () => {
         if (index == 'new') {
             saveClient(client)
             attClient()
+            closeForm()
         } else {
             editClient(index, client)
             attTable()
+            closeForm()
         }
     }
 }
